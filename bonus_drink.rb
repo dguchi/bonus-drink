@@ -1,5 +1,6 @@
 class BonusDrink
   def self.total_count_for(amount)
+    raise ArgumentError if amount < 0
     return calc_add_bottle(amount, 0)
   end
 
